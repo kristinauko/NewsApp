@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Royal News</string>
+    <string name="no_connection">There is no internet connection.</string>
+    <string name="no_news"> Currently there are no stories for you. Please come back later and try again.</string>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/mainPadding">
+
+    <android.support.v7.widget.CardView
+        style="@style/cardView"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@color/colorVeryLight"
+        android:id="@+id/card_view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/SectionTextView"
+                android:id="@+id/section"
+                tools:text="Nature" />
+
+            <TextView
+                style="@style/TitleTextView"
+                android:id="@+id/title"
+                tools:text="Shark was found on the beach" />
+
+            <View
+                style="@style/ViewTextView"
+                android:layout_width="match_parent" />
+
+            <LinearLayout
+                style="@style/AuthorDateLayout">
+
+                <TextView
+                    style="@style/AuthorTextView"
+                    android:id="@+id/author"
+                    tools:text="Daniel Dean" />
+
+                <TextView
+                    style="@style/DateTextView"
+                    android:id="@+id/publishing_time"
+                    tools:text="2018/05/30 14:15" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+
